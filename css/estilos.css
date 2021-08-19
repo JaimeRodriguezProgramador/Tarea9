@@ -1,0 +1,135 @@
+*{
+        padding: 0;
+        margin: 0;
+}
+
+header, nav{
+    display: block;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+    transition: .5s all ease-in-out;
+}
+
+ul{
+    list-style: none;
+}
+
+.header-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(27, 59, 199);
+}
+
+.main-menu{
+    background-color: rgb(27, 59, 199);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    border-bottom: 1px solid black;
+    padding: 0 1.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.menu-principal-desktop,
+.menu-principal-mobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-principal-mobile{
+    display: none;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+
+.link-principal{
+    padding: 0 1rem;
+    line-height: 70px;
+    height: 70px;
+    display: block;
+    color: white;
+    font-size: x-large;
+    transition: .5s all ease-in-out;
+}
+
+.link-principal:hover{
+    box-shadow: 0 -5px 0 0 white inset;
+}
+
+.container{
+    display: flex;
+    width: 70%;
+}
+
+.espacios{
+    margin-top: 100px;
+}
+
+.mensaje1 {
+    font-size: 60px;
+    padding: 15px 0px 0px 15px;
+}
+
+.mensaje2 {
+    font-size: 20px;
+    font-stretch: extra-expanded;
+    padding: 15px 0px 0px 15px;
+}
+
+.mensaje3 {
+    padding: 40px 0px 0px 15px;
+    font-size: 20px;
+}
+
+.mensaje4 {
+    font-size: 20px;
+    padding: 40px 0px 0px 15px;
+}
+
+@media only screen and (max-width: 820px){
+    .logotipo{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 820px){
+    .cuerpo1{
+        display: contents;
+    }
+    .cuerpo2{
+        display: none;
+    }
+    .figura1{
+        display: block;
+    }
+    .figura2{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 820px){
+    .cuerpo2{
+        display: contents;
+    }
+    .cuerpo1{
+        display: none;
+    }
+    .figura1{
+        display: none;
+    }
+    .figura2{
+        display: block;
+    }
+}
